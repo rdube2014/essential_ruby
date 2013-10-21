@@ -14,7 +14,9 @@
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
 # =========================================
-# Your code to define the method goes here.
+def pmt(interest_rate, number_of_payments, present_value)
+
+end	
 # =========================================
 
 puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
