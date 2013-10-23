@@ -15,21 +15,14 @@
 
 # =========================================
 def pmt(interest_rate, number_of_payments, present_value)
+	
+return (present_value * interest_rate*((1+interest_rate)**number_of_payments))/(((1+interest_rate)**number_of_payments)-1)
 
 end	
 
-puts "Enter the loan amount:"
-present_value = gets.chomp.to_i
-
-puts "Enter the number of payments:"
-number_of_payments = gets.chomp.to_i
-
-puts "Enter the interest_rate:"
-interest_rate = gets.chomp.to_f / 12
 
 
 # =========================================
 
-puts "Your monthly payment will be: " 
-puts (present_value * interest_rate*((1+interest_rate)**number_of_payments))/(((1+interest_rate)**number_of_payments)-1)
+# puts "Your monthly payment will be: #{pmt(0.1/12,60,30000)}" 
 
